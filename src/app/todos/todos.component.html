@@ -7,6 +7,9 @@
 
 <button (click)="addTodo()">add</button>
 <button (click)="clear()">clear</button>
+<button (click)="removeAll()">remove all todos</button>
+
+
 
 <ng-container *ngIf="todos.length === 0"
   >The list is empty</ng-container

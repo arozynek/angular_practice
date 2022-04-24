@@ -1,0 +1,11 @@
+<div *ngFor="let user of users | sort: 'first_name'">
+  <img [src]="user.avatar" />
+  <span
+    >{{ user.first_name | reverse }}
+    {{ user.last_name }}</span
+  >
+  <span appHighlight appHighlightColor="#ff0">
+    {{ user.email }}</span
+  >
+</div>
+<!-- <pre><code>{{ users | json }}</code></pre> -->
